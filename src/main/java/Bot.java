@@ -211,12 +211,12 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "anony_chat_bot";
+        return Config.username;
     }
 
     @Override
     public String getBotToken() {
-        return Main.token;
+        return Config.token;
     }
 
 }

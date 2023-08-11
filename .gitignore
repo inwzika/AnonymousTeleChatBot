@@ -19,3 +19,6 @@
 log/
 target/
 /target/
+/log.txt
+/data.properties
+/config.properties
