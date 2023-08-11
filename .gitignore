@@ -19,6 +19,6 @@
 log/
 target/
 /target/
-/log.txt
-/data.properties
-/config.properties
+/resources/log.txt
+/resources/data.properties
+/resources/config.properties

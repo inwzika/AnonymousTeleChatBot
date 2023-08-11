@@ -1,3 +1,5 @@
+package conf;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -8,7 +10,7 @@ public class Config {
 
     static {
         try {
-            properties.load(new FileInputStream("config.properties"));
+            properties.load(new FileInputStream("resources/config.properties"));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,28 +1,15 @@
+package gui;
+
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.generics.BotOptions;
-import org.telegram.telegrambots.meta.generics.BotSession;
-import org.telegram.telegrambots.meta.generics.TelegramBot;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
+import telegramBot.Bot;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author ASUS
- */
 public class Gui extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Gui
-     */
     public Gui() {
         initComponents();
     }
@@ -85,7 +72,7 @@ public class Gui extends javax.swing.JFrame {
 
             try {
                 TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-                botsApi.registerBot(new Bot());
+                botsApi.registerBot(Bot.getInstance());
             } catch (TelegramApiException ex) {
                 Logger.getLogger(Gui.class.getName()).log(Level.SEVERE, null, ex);
             }

@@ -1,5 +1,5 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+package logger;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -8,7 +8,7 @@ import java.util.Formatter;
 
 public class Logger {
     private String fileName;
-    private static final String DEFAULT_FILE_NAME = "log.txt";
+    private static final String DEFAULT_FILE_NAME = "resources/log.txt";
 
     public Logger(){
         this.fileName = DEFAULT_FILE_NAME;
